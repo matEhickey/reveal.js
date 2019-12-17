@@ -8,10 +8,11 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -25,6 +26,31 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				<div class='header'>
+					<img src="img/logo1.png" style="width:15%; position: absolute; left: -15%;">
+					<img src="img/logo2.png" style="top: 15px; width:10%; position: absolute; right: -15%;">
+				</div>
+				<section data-markdown>
+					# Titre
+					date
+					> Mathias DIDIER  
+				</section>
+				<section>
+					<div class="container">
+						<div class="col">
+							col
+						</div>
+						<div class="col">
+							col
+						</div>
+					</div>
+					<hr />
+					<div class="button">
+						button
+					</div>
+						
+				</section>
+					
 				<section>Slide 1</section>
 				<section>Slide 2</section>
 			</div>
@@ -37,6 +63,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				slideNumber: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
